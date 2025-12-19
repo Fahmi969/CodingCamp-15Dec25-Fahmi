@@ -1,0 +1,52 @@
+/* Logo */
+.logo-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-image: url("https://picsum.photos/200");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* OUR HEADQUARTER */
+.hq-container {
+    display: flex;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+.hq-item {
+    text-align: center;
+}
+
+.hq-circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* MESSAGE US */
+.message-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.message-form {
+    width: 300px;
+}
+
+.message-result {
+    width: 350px;
+    border: 1px solid black;
+    padding: 16px;
+}

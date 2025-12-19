@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+
+    <header class="main-header m-[8px] flex justify-between items-center">
+        <div class="logo-icon"></div>
+        <nav class="flex items-center gap-2">
+            <a class="border rounded p-[8px]" href="#home">Home</a>
+            <a class="border rounded p-[8px]" href="#our-profile">Profile</a>
+            <a class="border rounded p-[8px]" href="#portfolio">Portfolio</a>
+            <a class="border rounded p-[8px]" href="#message-us">Message Us</a>
+        </nav>
+    </header>
+
+        <hr>
+
+    <main>
+
+
+        <section id="home" class="min-h-[300px] m-[8px]">
+            <h1 class="text-3xl font-bold mb-4">
+                Hi <span id="welcome-speech"></span>, Welcome to Fahmi Portfolio
+            </h1>
+        </section>
+
+        <hr>
+
+        <section class="additional-content min-h-[400px] m-[8px]">
+            <h2 class="text-2xl font-bold mb-[24px]">Our Headquarter</h2>
+
+            <div class="hq-container">
+                <div class="hq-item">
+                    <div class="hq-circle"></div>
+                    <p>Jakarta</p>
+                </div>
+
+                <div class="hq-item">
+                    <div class="hq-circle"></div>
+                    <p>Bandung</p>
+                </div>
+
+                <div class="hq-item">
+                    <div class="hq-circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <section id="message-us" class="min-h-[500px] m-[8px]">
+            <h2 class="text-2xl font-bold mb-4">Message Us</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        
+                <form>
+                    <label>Nama</label>
+                    <input id="name-input" type="text" class="border p-2 mb-3 w-full">
+
+                    <label>Tanggal Lahir</label>
+                    <input id="dob-input" type="date" class="border p-2 mb-3 w-full">
+
+                    <label>Jenis Kelamin</label>
+                    <div class="mb-3">
+                        <label>
+                            <input type="radio" name="gender" value="Laki-laki" checked>
+                            Laki-laki
+                        </label>
+
+                        <label class="ml-4">
+                            <input type="radio" name="gender" value="Perempuan">
+                            Perempuan
+                        </label>
+                    </div>
+
+                    <label>Pesan</label>
+                    <textarea id="message-input" rows="4" class="border p-2 mb-4 w-full"></textarea>
+
+                    <button type="button" onclick="validateForm()"
+                        class="border px-4 py-2 w-full">
+                        Submit
+                    </button>
+                </form>
+
+        
+                <div class="border p-4">
+                    <p><b>Current Time:</b> <span id="current-time"></span></p>
+                    <p><b>Nama:</b> <span id="result-name"></span></p>
+                    <p><b>Tanggal Lahir:</b> <span id="result-dob"></span></p>
+                    <p><b>Jenis Kelamin:</b> <span id="result-gender"></span></p>
+                    <p><b>Pesan:</b> <span id="result-message"></span></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-right p-4 bg-gray-200"> 
+        &copy; 2025 Fahmi Portfolio
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
